@@ -47,7 +47,7 @@ const getTodoListObject = dbObj => {
   }
 }
 
-app.get('/todos/?status=TO%20DO', async (request, response) => {
+app.get('/todos/', async (request, response) => {
   let data = null
   let toDoQuery = ''
   const {search_q = '', priority, status} = request.query
